@@ -11,4 +11,5 @@ body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
 /* Scrolling Text Animation */
 .scrolling-text-container { width: 100%; overflow: hidden; white-space: nowrap; }
 .scrolling-text { display: inline-block; animation: scrollText 10s linear infinite; }
+.hero-background { width: 100%; height: auto; position: absolute; top: 0; left: 0; z-index: -1; }
 @keyframes scrollText { from { transform: translateX(100%); } to { transform: translateX(-100%); } }
