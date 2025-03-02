@@ -24,6 +24,18 @@ body {
     padding: 50px 0 10px;
     color: black;
     margin-top: 60px;
+    position: relative;
+}
+
+.scrolling-text {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scrollText 10s linear infinite;
+}
+
+@keyframes scrollText {
+    from { transform: translateX(100%); }
+    to { transform: translateX(-100%); }
 }
 
 .top-nav {
