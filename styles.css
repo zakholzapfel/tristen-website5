@@ -1,25 +1,29 @@
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  background: linear-gradient(to bottom, #FFA500, #FF8C00);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: linear-gradient(to bottom, #FFA500, #FF8C00);
 }
 
-/* Updated hero logo styling – now part of document flow */
-.hero-logo {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* Container for logo image and scrolling text */
+/* Container for logo image and rotating text */
 .logo-container {
   position: relative;
   display: inline-block;
 }
 
-/* Adjusted scrolling text to overlay the logo image */
+/* Updated hero logo styling (replacing .hero-background) */
+.hero-logo {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+  z-index: 1;
+  opacity: 0.6; /* Preserves previous opacity setting */
+  filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5));
+}
+
+/* Scrolling text container positioned on top of the logo */
 .scrolling-text-container {
   position: absolute;
   top: 50%;
@@ -29,13 +33,17 @@ body {
   overflow: hidden;
   white-space: nowrap;
   padding: 10px 0;
-  color: black;
+  z-index: 2; /* Ensures the text appears above the logo */
 }
 
-/* Scrolling text animation */
+/* Updated rotating text styling */
 .scrolling-text {
   display: inline-block;
   white-space: nowrap;
+  color: white;                       /* White text color */
+  font-size: 4em;                     /* Much larger text */
+  font-family: 'Comic Sans MS', cursive, sans-serif; /* Bubble-letter style */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);  /* Adds shading for depth */
   animation: scrollText 10s linear infinite;
 }
 
@@ -45,48 +53,48 @@ body {
 }
 
 .top-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  background: #222;
-  color: white;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: #222;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 .top-nav a {
-  color: white;
-  text-decoration: none;
-  margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
 }
 
 .social-icon {
-  width: 24px;
-  height: 24px;
+    width: 24px;
+    height: 24px;
 }
 
 .items-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
 }
 
 .item img {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 10px;
-  transition: transform 0.2s ease-in-out;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.2s ease-in-out;
 }
 
 .item img:hover {
-  transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 .item img[src*="featured1.jpg"],
@@ -102,17 +110,17 @@ body {
 .item img[src*="service4.jpg"],
 .item img[src*="service5.jpg"],
 .item img[src*="service6.jpg"] {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 10px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 .about-img {
-  width: 200px; /* Reduced size */
-  height: auto;
-  display: block;
-  margin: 20px auto;
-  border-radius: 10px;
-  object-fit: cover;
+    width: 200px; /* Reduced size */
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    object-fit: cover;
 }
