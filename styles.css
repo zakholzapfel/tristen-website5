@@ -13,7 +13,8 @@ body {
     top: 0;
     left: 0;
     z-index: -1;
-    opacity: 0.3; /* Fades the background logo */
+    opacity: 0.6; /* Adjusted opacity to make logo more visible */
+    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5)); /* Adds shadow to enhance visibility */
 }
 
 .scrolling-text-container {
@@ -50,18 +51,41 @@ body {
     height: 24px;
 }
 
+.items-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
 .item img {
-    width: 100%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.item img:hover {
+    transform: scale(1.05);
+}
+
+.item img[src*="featured1.jpg"],
+.item img[src*="featured2.jpg"],
+.item img[src*="featured3.jpg"],
+.item img[src*="featured4.jpg"],
+.item img[src*="shop-item1.jpg"],
+.item img[src*="shop-item2.jpg"],
+.item img[src*="shop-item3.jpg"],
+.item img[src*="service1.jpg"],
+.item img[src*="service2.jpg"],
+.item img[src*="service3.jpg"],
+.item img[src*="service4.jpg"],
+.item img[src*="service5.jpg"],
+.item img[src*="service6.jpg"] {
+    width: 150px;
     height: 150px;
     object-fit: cover;
     border-radius: 10px;
 }
-
-.item img[src*="featured1.jpg"] {
-    object-fit: cover;
-    height: 150px;
-    width: auto;
-    max-width: 100%;
-    border-radius: 10px;
-}
-
