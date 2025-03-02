@@ -128,3 +128,77 @@ body {
 .contact-form button:hover {
     background-color: #ff5722;
 }
+
+const styles = `body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: linear-gradient(to bottom, #FFA500, #FF8C00);
+}
+
+.hero-background {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.3; /* Fades the background logo */
+}
+
+.scrolling-text-container {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 50px 0 10px;
+    color: black;
+    margin-top: 60px;
+}
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: #222;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.top-nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.item img[src*="featured1.jpg"] {
+    object-fit: cover;
+    height: 150px;
+    width: auto;
+    max-width: 100%;
+    border-radius: 10px;
+}`;
+
+fs.writeFileSync(path.join(__dirname, "public", "styles.css"), styles);
+
+// Write files to public directory
+for (const [filename, content] of Object.entries(pages)) {
+    fs.writeFileSync(path.join(__dirname, "public", filename), content);
+}
