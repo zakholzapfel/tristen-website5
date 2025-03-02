@@ -75,10 +75,9 @@ body {
     width: 100%;
     overflow: hidden;
     white-space: nowrap;
-    padding: 50px 0 10px; /* Adjusted padding to lower text */
-    background: #333;
-    color: white;
-    margin-top: 60px; /* Moves the scrolling text below the menu */
+    padding: 50px 0 10px;
+    color: black;
+    margin-top: 60px;
 }
 
 
