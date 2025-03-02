@@ -1,67 +1,74 @@
-"index.html": <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tap Into Tristen</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tap Into Tristen</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav class="top-nav">
-            <div class="nav-left">
-                <a href="shop.html">Shop</a>
-                <a href="services.html">Services</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
-            </div>
-            <div class="nav-center">
-                <a href="index.html" class="home-button">TAP INTO TRISTEN</a>
-            </div>
-            <div class="nav-right">
-                <a href="https://www.tiktok.com/@tapintotristen"><img src="assets/tiktok-icon.png" alt="TikTok" class="social-icon"></a>
-                <a href="https://www.youtube.com/@tapintotristen"><img src="assets/youtube-icon.png" alt="YouTube" class="social-icon"></a>
-                <a href="https://www.instagram.com/tapintotristen"><img src="assets/instagram-icon.png" alt="Instagram" class="social-icon"></a>
-                <a href="#cart" class="cart-button">🛒 <span id="cart-count">0</span></a>
-            </div>
-        </nav>
-    </header>
-    <section class="hero">
-        <img src="assets/logo.jpg" class="hero-background" alt="Logo Background">
-        <div class="scrolling-text-container">
-            <div class="scrolling-text">PHOTOGRAPHER - MAKEUP ARTIST - PAINTER - MURALIST - DESIGNER -</div>
-        </div>
-        <button onclick="navigateToGallery()">View Gallery</button>
-    </section>
-    <section class="featured-items">
-        <h2>FEATURED PAINTINGS</h2>
-        <div class="items-grid">
-            <div class="item"><img src="assets/featured1.jpg" alt="Featured 1"><p>Sunset Bliss - $500</p></div>
-            <div class="item"><img src="assets/featured2.jpg" alt="Featured 2"><p>Ocean Dreams - $600</p></div>
-            <div class="item"><img src="assets/featured3.jpg" alt="Featured 3"><p>Mystic Forest - $700</p></div>
-            <div class="item"><img src="assets/featured4.jpg" alt="Featured 4"><p>Golden Hour - $800</p></div>
-        </div>
-    </section>
-    <section class="featured-services">
-        <h2>EXCLUSIVE SERVICES</h2>
-        <div class="items-grid">
-            <div class="item"><img src="assets/service1.jpg" alt="Service 1"><p>Portrait Photography - $200</p></div>
-            <div class="item"><img src="assets/service2.jpg" alt="Service 2"><p>Event Makeup - $150</p></div>
-            <div class="item"><img src="assets/service3.jpg" alt="Service 3"><p>Custom Painting - $500</p></div>
-            <div class="item"><img src="assets/service4.jpg" alt="Service 4"><p>Mural Design - $1000</p></div>
-        </div>
-    </section>
-    <section class="contact-section">
-        <h2>CONTACT ME</h2>
-        <form class="contact-form">
-            <input type="text" name="first-name" placeholder="First Name" required>
-            <input type="text" name="last-name" placeholder="Last Name" required>
-            <input type="email" name="email" placeholder="Email" required>
-            <input type="text" name="subject" placeholder="Subject" required>
-            <textarea name="message" placeholder="Message" required></textarea>
-            <button type="submit">SEND</button>
-        </form>
-    </section>
+  <header>
+    <nav class="top-nav">
+      <div class="nav-left">
+        <a href="shop.html">Shop</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="nav-center">
+        <a href="index.html" class="home-button">TAP INTO TRISTEN</a>
+      </div>
+      <div class="nav-right">
+        <a href="https://www.tiktok.com/@tapintotristen"><img src="assets/tiktok-icon.png" alt="TikTok" class="social-icon"></a>
+        <a href="https://www.youtube.com/@tapintotristen"><img src="assets/youtube-icon.png" alt="YouTube" class="social-icon"></a>
+        <a href="https://www.instagram.com/tapintotristen"><img src="assets/instagram-icon.png" alt="Instagram" class="social-icon"></a>
+        <a href="#cart" class="cart-button">🛒 <span id="cart-count">0</span></a>
+      </div>
+    </nav>
+  </header>
+  
+  <section class="hero">
+    <!-- Logo container holds the logo image with the scrolling text overlaid -->
+    <div class="logo-container">
+      <img src="assets/logo.jpg" class="hero-logo" alt="Logo">
+      <div class="scrolling-text-container">
+        <div class="scrolling-text">PHOTOGRAPHER - MAKEUP ARTIST - PAINTER - MURALIST - DESIGNER -</div>
+      </div>
+    </div>
+    <!-- Other hero content moved below the logo asset -->
+    <button onclick="navigateToGallery()">View Gallery</button>
+  </section>
+  
+  <section class="featured-items">
+    <h2>FEATURED PAINTINGS</h2>
+    <div class="items-grid">
+      <div class="item"><img src="assets/featured1.jpg" alt="Featured 1"><p>Sunset Bliss - $500</p></div>
+      <div class="item"><img src="assets/featured2.jpg" alt="Featured 2"><p>Ocean Dreams - $600</p></div>
+      <div class="item"><img src="assets/featured3.jpg" alt="Featured 3"><p>Mystic Forest - $700</p></div>
+      <div class="item"><img src="assets/featured4.jpg" alt="Featured 4"><p>Golden Hour - $800</p></div>
+    </div>
+  </section>
+  
+  <section class="featured-services">
+    <h2>EXCLUSIVE SERVICES</h2>
+    <div class="items-grid">
+      <div class="item"><img src="assets/service1.jpg" alt="Service 1"><p>Portrait Photography - $200</p></div>
+      <div class="item"><img src="assets/service2.jpg" alt="Service 2"><p>Event Makeup - $150</p></div>
+      <div class="item"><img src="assets/service3.jpg" alt="Service 3"><p>Custom Painting - $500</p></div>
+      <div class="item"><img src="assets/service4.jpg" alt="Service 4"><p>Mural Design - $1000</p></div>
+    </div>
+  </section>
+  
+  <section class="contact-section">
+    <h2>CONTACT ME</h2>
+    <form class="contact-form">
+      <input type="text" name="first-name" placeholder="First Name" required>
+      <input type="text" name="last-name" placeholder="Last Name" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="text" name="subject" placeholder="Subject" required>
+      <textarea name="message" placeholder="Message" required></textarea>
+      <button type="submit">SEND</button>
+    </form>
+  </section>
 </body>
 </html>
-};
