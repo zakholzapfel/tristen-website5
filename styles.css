@@ -89,3 +89,12 @@ body {
     object-fit: cover;
     border-radius: 10px;
 }
+
+.about-img {
+    width: 200px; /* Reduced size */
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
